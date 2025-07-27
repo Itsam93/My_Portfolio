@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sam Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:wght@400;600&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/d621431e87.js"
+      crossorigin="anonymous"
+    ></script>
+
+  </head>
+  <body>
+    <nav>
+      <!--This contains the navbar-->
+      <div class="left">
+        <!--This section is for the name of the site-->
+        <a>Samuel Oglekwu</a>
+      </div>
+
+      <div class="right">
+        <!--This section is for links to my socials-->
+        <a href="http://github.com" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github"></i>
+          <span>Github</span>
+        </a>
+
+        <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>Linkedin</span>
+        </a>
+
+        <a href="mailto:samogleks@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Mail</span>
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <!--MAIN-->
+      <section class="hero">
+        <!--Section one is About Me-->
+        <div class="text">
+          <h2>Hi, I'm Samuel 🤞</h2>
+          <p>
+            I'm a passionate Front-End Developer with a keen eye for detail and
+            a strong focus on creating clean, responsive, and user-friendly
+            interfaces. I enjoy turning complex problems into elegant, intuitive
+            digital experiences. Whether it's building from scratch or improving
+            existing systems, I'm driven by a love for good design, clean code,
+            and seamless user interaction.
+          </p>
+          <div class="link">
+            <a href="#skills">
+              <i class="fa-solid fa-code"></i>
+              <span>Skills</span>
+            </a>
+
+            <a href="#testimony">
+              <i class="fa-solid fa-pen"></i>
+              <span>Testimony</span>
+            </a>
+
+            <a href="#contact">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Contact</span>
+            </a>
+          </div>
+        </div>
+        <div class="picture">
+          <img src="images/IMG_20230106_112226_133.jpg" alt="" />
+        </div>
+      </section>
+
+      <section id="skills" class="skills-section">
+        <!--Section two is my skills-->
+        <h2>My Skills</h2>
+        <div class="text">
+          I'm skilled in using HTML, CSS, and JavaScript. My focus is on clean
+          code, great user experiences, and continuous learning in the
+          ever-evolving world of web development.
+        </div>
+        <div class="cells">
+          <div class="cell">
+            <img src="images/html-logo.webp" alt="HTML logo" />
+            <span>HTML</span>
+          </div>
+
+          <div class="cell">
+            <img src="images/css-logo.webp" alt="CSS Logo" />
+            <span>CSS</span>
+          </div>
+
+          <div class="cell">
+            <img src="images/javascript-logo.webp" alt="Javascript logo" />
+            <span>Javascript</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimony" class="testimony-section">
+        <!--Section three is testimony-->
+        <h2>Testimony</h2>
+        <div class="group">
+          <div class="person-details">
+            <img src="images/testimony-headshot.webp" />
+            <p>Mr. Feez</p>
+            <p>Director, Tech Hub Corp</p>
+          </div>
+          <div class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+            molestiae minima in dolore, ullam obcaecati consequuntur impedit
+            fugit odit esse perferendis libero atque vero incidunt eum veniam
+            dolor officiis quas consequatur est at? Magni voluptatem dignissimos
+            architecto cupiditate sapiente quae! Hic quos nam iure consequuntur
+            expedita, illum autem repellat magnam?
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <!--Section is my contact-->
+        <h2>Contact</h2>
+        <div class="group">
+          <div class="text">
+            To send me a message, kindly fill out the form with the required details and you will get a swift response from me. Thank you!!
+              <div class="social-icons">
+                <a href="www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+
+                <a href="www.twitter.com"><i class="fa-brands fa-x-twitter"></i></i></a>
+
+                <a href="www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+
+              </div>
+              <a href="Images/my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <form id="myForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" cols="30" rows="10" required></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
