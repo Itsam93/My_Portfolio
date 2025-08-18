@@ -447,4 +447,39 @@ form {
   .contact-section .group {
     flex-direction: column;
   }
+
+  @media (max-width: 500px) {
+    /*Nav-Area*/
+    nav .right a {
+      margin-right: 9px;
+    }
+
+    /*Hero Section*/
+    .hero .text h2 {
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .hero {
+      flex-direction: column-reverse;
+      padding: 0 20px;
+    }
+
+    .testimony-section h2 {
+      text-align: center;
+    }
+
+    .testimony-section .group {
+      flex-direction: column;
+    }
+
+    /*Contact Section*/
+    .contact-section h2 {
+      text-align: center;
+    }
+
+    .contact-section .group {
+      flex-direction: column;
+    }
+  }
 }
