@@ -67,7 +67,7 @@ nav .right a span {
   align-items: center;
   padding: 0 50px;
   margin: 50px 0;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   gap: 40px;
 }
 
@@ -112,7 +112,7 @@ nav .right a span {
 
 .hero .text p {
   font-size: 16px;
-  line-height: 25px;
+  line-height: 20px;
 }
 
 .hero .picture {
@@ -146,7 +146,7 @@ nav .right a span {
 }
 
 .skills-section .text {
-  text-align: center;
+  text-align: left;
   margin-bottom: 20px;
   line-height: 25px;
 }
@@ -162,7 +162,6 @@ nav .right a span {
   justify-content: center;
   align-items: center;
   gap: 10px;
-
   width: 200px;
   padding: 10px 20px;
   border: 1.5px solid #d3d3d3;
@@ -183,7 +182,7 @@ nav .right a span {
 
 /*Projects Section*/
 .projects-section {
-  padding: 3rem 2rem;
+  padding: 0 50px;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -191,6 +190,11 @@ nav .right a span {
 .projects-section h2 {
   text-align: center;
   font-size: 35px;
+}
+
+.projects-section .text {
+  text-align: left;
+  line-height: 20px;
 }
 
 .projects-grid {
@@ -225,6 +229,7 @@ nav .right a span {
 .project-card p {
   font-size: 0.9rem;
   padding: 0 1rem;
+  line-height: 18px;
 }
 
 .project-card .buttons {
@@ -250,7 +255,7 @@ nav .right a span {
 /*Testimony Section*/
 .testimony-section {
   padding: 0 50px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .testimony-section h2 {
@@ -302,6 +307,7 @@ nav .right a span {
 
 .contact-section h2 {
   font-size: 35px;
+  text-align: center;
 }
 
 .contact-section .group {
@@ -379,7 +385,7 @@ form {
 
 .btn {
   display: block;
-  margin: 50px auto;
+  margin: 10px;
   width: fit-content;
   border: 1px solid var(--link-color);
   padding: 14px 50px;
@@ -454,6 +460,10 @@ form {
       margin-right: 9px;
     }
 
+    nav .left a {
+      font-size: 12px;
+    }
+
     .hero {
       padding: 0 20px;
     }
@@ -466,19 +476,26 @@ form {
 
     .hero .text p {
       font-size: 13px;
-      text-align: center;
+      text-align: left;
     }
 
-    .hero .picture img {
-      border-radius: 50%;
-      width: 250px;
+    .hero .picture {
+      flex: 2;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      justify-content: right;
+      width: 250px;
+      transform: translateX(30px);
+      animation: left ease-in 0.7s;
     }
+
     .hero {
       flex-direction: column-reverse;
       padding: 0 20px;
+    }
+
+    /*Testimony Section*/
+    .testimony-section {
+      padding: 0 25px;
     }
 
     .testimony-section h2 {
@@ -495,19 +512,28 @@ form {
     }
 
     /*Skills Section*/
-    .skills-section .text p {
-      text-align: center;
-      font-size: 13px;
+    .skills-section {
+      padding: 0 20px;
+      margin-bottom: 50px;
     }
-
-    /*My Skills Section*/
+    .skills-section .text {
+      text-align: left;
+      font-size: 13px;
+      line-height: 20px;
+    }
     .skills-section .text {
       font-size: 13px;
+      margin: 0;
     }
 
     /*My Projects Section*/
+    .projects-section {
+      padding: 0 25px;
+    }
     .projects-section .text {
       font-size: 13px;
+      text-align: left;
+      line-height: 20px;
     }
 
     .project-card p {
@@ -516,20 +542,25 @@ form {
     .project-card .buttons a {
       background: #0070f3;
       color: #fff;
-      padding: 0.3rem 0.6rem;
+      padding: 0.4rem 0.5rem;
+      font-size: 13px;
       border-radius: 8px;
       text-decoration: none;
       transition: background 0.3s;
     }
 
     /*Contact Section*/
+    .contact-section {
+      padding: 0 25px;
+    }
+
     .contact-section h2 {
       text-align: center;
     }
 
     .contact-section .text {
       font-size: 13px;
-      line-height: 1.5;
+      line-height: 20px;
     }
 
     .contact-section .group {
