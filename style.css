@@ -454,12 +454,28 @@ form {
       margin-right: 9px;
     }
 
+    .hero {
+      padding: 0 20px;
+    }
+
     /*Hero Section*/
     .hero .text h2 {
       font-size: 25px;
       text-align: center;
     }
 
+    .hero .text p {
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .hero .picture img {
+      border-radius: 50%;
+      width: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     .hero {
       flex-direction: column-reverse;
       padding: 0 20px;
@@ -469,13 +485,51 @@ form {
       text-align: center;
     }
 
+    .testimony-section .text {
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
     .testimony-section .group {
       flex-direction: column;
+    }
+
+    /*Skills Section*/
+    .skills-section .text p {
+      text-align: center;
+      font-size: 13px;
+    }
+
+    /*My Skills Section*/
+    .skills-section .text {
+      font-size: 13px;
+    }
+
+    /*My Projects Section*/
+    .projects-section .text {
+      font-size: 13px;
+    }
+
+    .project-card p {
+      font-size: 13px;
+    }
+    .project-card .buttons a {
+      background: #0070f3;
+      color: #fff;
+      padding: 0.3rem 0.6rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
     }
 
     /*Contact Section*/
     .contact-section h2 {
       text-align: center;
+    }
+
+    .contact-section .text {
+      font-size: 13px;
+      line-height: 1.5;
     }
 
     .contact-section .group {
