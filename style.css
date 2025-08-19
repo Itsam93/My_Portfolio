@@ -77,6 +77,7 @@ nav .right a span {
 
 .hero text h2 {
   font-size: 45px;
+  text-align: left;
 }
 .hero .text .link {
   margin-top: 25px;
@@ -118,7 +119,6 @@ nav .right a span {
 .hero .picture {
   flex: 2;
   display: flex;
-  justify-content: right;
   transform: translateX(30px);
   animation: left ease-in 0.7s;
 }
@@ -130,8 +130,10 @@ nav .right a span {
 }
 
 .hero .picture img {
-  border-radius: 50%;
   width: 300px;
+  margin: auto;
+  border-radius: 10px;
+  /* padding-right: 30px; */
 }
 
 /*My Skills Section*/
@@ -418,6 +420,11 @@ form {
     background-color: transparent;
     padding: 0;
   }
+
+  .hero .text h2 {
+    font-size: 40px;
+    text-align: left;
+  }
 }
 
 @media (max-width: 650px) {
@@ -429,7 +436,7 @@ form {
   /*Hero Section*/
   .hero .text h2 {
     font-size: 35px;
-    text-align: center;
+    text-align: left;
   }
 
   .hero {
@@ -454,117 +461,134 @@ form {
     flex-direction: column;
   }
 
-  @media (max-width: 500px) {
-    /*Nav-Area*/
-    nav .right a {
-      margin-right: 9px;
-    }
-
-    nav .left a {
-      font-size: 12px;
-    }
-
-    .hero {
-      padding: 0 20px;
-    }
-
-    /*Hero Section*/
-    .hero .text h2 {
-      font-size: 25px;
-      text-align: center;
-    }
-
-    .hero .text p {
-      font-size: 13px;
-      text-align: left;
-    }
-
-    .hero .picture {
-      flex: 2;
+  @media (max-width: 540px) {
+    .skills-section .cells .cell {
       display: flex;
-      justify-content: right;
-      width: 250px;
-      transform: translateX(30px);
-      animation: left ease-in 0.7s;
+      justify-content: center;
+      align-items: center;
+      gap: 3px;
+      width: 50px;
+      padding: 5px 10px;
+      border: 1.5px solid #d3d3d3;
+      border-radius: 5px;
+      margin: 10px;
     }
+    .cells span {
+      display: none;
+    }
+  }
+}
 
-    .hero {
-      flex-direction: column-reverse;
-      padding: 0 20px;
-    }
+@media (max-width: 500px) {
+  /*Nav-Area*/
+  nav .right a {
+    margin-right: 9px;
+  }
 
-    /*Testimony Section*/
-    .testimony-section {
-      padding: 0 25px;
-    }
+  nav .left a {
+    font-size: 18px;
+  }
 
-    .testimony-section h2 {
-      text-align: center;
-    }
+  .hero {
+    padding: 0 20px;
+  }
 
-    .testimony-section .text {
-      font-size: 13px;
-      line-height: 1.5;
-    }
+  /*Hero Section*/
+  .hero .text h2 {
+    font-size: 25px;
+    text-align: left;
+  }
 
-    .testimony-section .group {
-      flex-direction: column;
-    }
+  .hero .text p {
+    font-size: 13px;
+    text-align: left;
+  }
 
-    /*Skills Section*/
-    .skills-section {
-      padding: 0 20px;
-      margin-bottom: 50px;
-    }
-    .skills-section .text {
-      text-align: left;
-      font-size: 13px;
-      line-height: 20px;
-    }
-    .skills-section .text {
-      font-size: 13px;
-      margin: 0;
-    }
+  .hero .picture {
+    flex: 2;
+    display: flex;
+    justify-content: right;
+    width: 250px;
+    transform: translateX(30px);
+    animation: left ease-in 0.7s;
+  }
 
-    /*My Projects Section*/
-    .projects-section {
-      padding: 0 25px;
-    }
-    .projects-section .text {
-      font-size: 13px;
-      text-align: left;
-      line-height: 20px;
-    }
+  .hero {
+    flex-direction: column-reverse;
+    padding: 0 20px;
+  }
 
-    .project-card p {
-      font-size: 13px;
-    }
-    .project-card .buttons a {
-      background: #0070f3;
-      color: #fff;
-      padding: 0.4rem 0.5rem;
-      font-size: 13px;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
+  /*Testimony Section*/
+  .testimony-section {
+    padding: 0 25px;
+  }
 
-    /*Contact Section*/
-    .contact-section {
-      padding: 0 25px;
-    }
+  .testimony-section h2 {
+    text-align: center;
+  }
 
-    .contact-section h2 {
-      text-align: center;
-    }
+  .testimony-section .text {
+    font-size: 13px;
+    line-height: 1.5;
+  }
 
-    .contact-section .text {
-      font-size: 13px;
-      line-height: 20px;
-    }
+  .testimony-section .group {
+    flex-direction: column;
+  }
 
-    .contact-section .group {
-      flex-direction: column;
-    }
+  /*Skills Section*/
+  .skills-section {
+    padding: 0 20px;
+    margin-bottom: 50px;
+  }
+  .skills-section .text {
+    text-align: left;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .skills-section .text {
+    font-size: 13px;
+    margin: 0;
+  }
+
+  /*My Projects Section*/
+  .projects-section {
+    padding: 0 25px;
+  }
+  .projects-section .text {
+    font-size: 13px;
+    text-align: left;
+    line-height: 20px;
+  }
+
+  .project-card p {
+    font-size: 13px;
+  }
+  .project-card .buttons a {
+    background: #0070f3;
+    color: #fff;
+    padding: 0.4rem 0.5rem;
+    font-size: 13px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+
+  /*Contact Section*/
+  .contact-section {
+    padding: 0 25px;
+  }
+
+  .contact-section h2 {
+    text-align: center;
+  }
+
+  .contact-section .text {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .contact-section .group {
+    flex-direction: column;
   }
 }
